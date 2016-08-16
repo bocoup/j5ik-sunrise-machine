@@ -62,13 +62,13 @@ In the course of building the sunrise machine, I discovered that some webcams re
 
 Working with a USB thumb drive and USB camera on a Tessel is eerily easy.
 
-For the thumb drive: make sure it is formatted as Fat32 or something similar (TODO CLARITY). The sunrise machine will write files (images, movies and GIFs) directly to your thumb drive. If you're curious, a mounted USB thumb drive can be accessed at `/mnt/sda1` on the Tessel's file system. Use the `t2 root` command if you want to `ssh` in to your Tessel and have a look around the filesystem—the Tessel 2 runs OpenWRT Linux.
+For the thumb drive: make sure it is formatted as Fat32 or something similar (MS-DOS FAT, ExFat—_not_ Mac OS Extended). The sunrise machine will write files (images, movies and GIFs) directly to your thumb drive. If you're curious, a mounted USB thumb drive can be accessed at `/mnt/sda1` on the Tessel's file system. Use the `t2 root` command if you want to `ssh` in to your Tessel and have a look around the filesystem—the Tessel 2 runs OpenWRT Linux.
 
 Similarly, plugging in a USB webcam to a Tessel makes the device available at `/dev/video0`.
 
 ### The Tessel and Time
 
-The Tessel 2 isn't an independent timekeeper. Once the Tessel has power and its OpenWRT Linux boots, it will attempt to connect to an NTP (Network Time Protocol) server to obtain the current time. There are a couple of things to note about this. One, dates and times on the Tessel are UTC times—it doesn't know about your local timezone. Second, the Tessel can't tell what time it is at all if it does not have a network connection (e.g. if it's only tethered to your computer over USB but is not connected to your LAN). In that case, it will fall back to a hard-coded time, TODO FLESH OUT
+The Tessel 2 isn't an independent timekeeper. Once the Tessel has power and its OpenWRT Linux boots, it will attempt to connect to an NTP (Network Time Protocol) server to obtain the current time. There are a couple of things to note about this. One, dates and times on the Tessel are UTC times—it doesn't know about your local timezone. Second, the Tessel can't tell what time it is at all if it does not have a network connection (e.g. if it's only tethered to your computer over USB but is not connected to your LAN).
 
 The command `t2 list` will show you all nearby Tessels and how they are connected, e.g. for my Tessel, which I've named _ichabod_ after a local early settler of my town named, improbably, Ichabod Onion:
 
