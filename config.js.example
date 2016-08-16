@@ -1,0 +1,18 @@
+module.exports = {
+  lat                : 43.34, // Your latitude (This is Vermont)
+  long               : -72.64, // Your longitude (This is Vermont)
+  utcOffset          : '-04:00', // Your timezone relative to UTC
+  autoSchedule       : 'sunrise', // Any property from `suncalc` or `false` to disable
+  postToTwitter      : true, // `true` will create posts of GIFs
+  tweetBody          : 'It is a beautiful day!', // Text tweeted with GIFs
+  consumer_key       : '', // Twitter
+  consumer_secret    : '', // Twitter
+  access_token_key   : '', // Twitter
+  access_token_secret: '', // Twitter
+  captureFrequency   : 30, // in seconds (default one image every 30s)
+  captureCount       : 20, // number of stills per montage
+  calibrateCamera    : 3, // length of camera calibration (default 3s)
+  statusLED          : true, // Enable RGB status LED? false will turn it off
+  basedir            : '/mnt/sda1/captures', // where files get stored
+  dateFormat         : 'ddd MMM DD, YYYY HH:mm:ss'
+};
