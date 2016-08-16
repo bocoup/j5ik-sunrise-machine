@@ -253,7 +253,7 @@ The JavaScript `class` exported by `recording.js`, `Recording`, encapsulates som
 
 You can see the [source of `recording.js` here](recording.js)
 
-### Where it all Happens: `sunrise.js`
+### Where it all Happens: `index.js`
 
 We've met the supporting cast. Now let's walk through, in entirety, `index.js`, which is the script you'll run directly on your Tessel to make the sunrise machine go! Here it is, with lots of comments.
 
