@@ -1,0 +1,36 @@
+{
+  "name": "j5ik-sunrise-machine",
+  "version": "1.0.0",
+  "description": "Automatically create timelapse videos of the sunrise with a Tessel 2",
+  "main": "index.js",
+  "dependencies": {
+    "johnny-five": "^0.10.0",
+    "moment": "^2.14.1",
+    "suncalc": "^1.7.0",
+    "tessel-io": "^0.7.2",
+    "twitter": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bocoup/j5ik-sunrise-machine.git"
+  },
+  "keywords": [
+    "tessel",
+    "tessel2",
+    "iot",
+    "webcam",
+    "timelapse",
+    "j5ik",
+    "johnny-five"
+  ],
+  "author": "Lyza Danger Gardner <lyza@lyza.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bocoup/j5ik-sunrise-machine/issues"
+  },
+  "homepage": "https://github.com/bocoup/j5ik-sunrise-machine#readme"
+}
