@@ -48,7 +48,7 @@ board.on('ready', () => { // Here we go. The board is ready. Let's go!
 
   function schedule () { // Schedule to record next autoSchedule event
     if (!config.autoSchedule) { // auto-scheduling is disabled in config
-      return 'Nothing to schedule! Sunrise machine in auto mode';
+      return 'Nothing to schedule! Sunrise machine in manual mode';
     }
     const eventName    = config.autoSchedule;
     const now          = Moment();
